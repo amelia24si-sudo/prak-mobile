@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F3E8"
+    tools:context=".pertemuan_2.SecondActivity">
+
+    <!-- Stiker Jepang di Background -->
+
+    <!-- Lampion -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏮"
+        android:textSize="40sp"
+        android:textColor="#AEC9AE"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:rotation="-10"
+        android:alpha="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bunga Sakura -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌸"
+        android:textSize="45sp"
+        android:textColor="#C8DDC8"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="50dp"
+        android:rotation="15"
+        android:alpha="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Rubah -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🦊"
+        android:textSize="50sp"
+        android:textColor="#B8D0B8"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:rotation="-5"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Koin Keberuntungan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🪙"
+        android:textSize="35sp"
+        android:textColor="#AEC9AE"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:rotation="20"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Card Utama -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="28dp">
+
+            <!-- Stiker Jepang di Dalam Card -->
+
+            <TextView
+                android:id="@+id/stikerKiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.7"
+                android:rotation="-12"
+                android:text="⛩️"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/stikerKanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎋"
+                android:textSize="32sp"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginEnd="-15dp"
+                android:rotation="15"
+                android:alpha="0.7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hai! 👋"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#4A674A"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/subtitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yuk kenalan!"
+                android:textSize="18sp"
+                android:textColor="#6B8E6B"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+            <!-- Label Nama dengan Stiker -->
+
+            <!-- Input Field dengan Background Langsung -->
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:text="📝 Nama"
+                android:textColor="#5F735F"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/inputNama"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subtitleText" />
+
+            <EditText
+                android:id="@+id/inputNama"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#F5FAF5"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="cth: Siti Nurhaliza"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textColor="#2C3E2C"
+                android:textColorHint="#A0B6A0"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:importantForAutofill="no"
+                android:radius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textNama" />
+
+            <!-- Garis Dekoratif (Menggantikan Border) -->
+            <View
+                android:id="@+id/garisBawah"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#D1E5D1"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/inputNama"
+                app:layout_constraintStart_toStartOf="@+id/inputNama"
+                app:layout_constraintTop_toBottomOf="@+id/inputNama" />
+
+            <!-- Tombol Submit -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="🦊 kirim 🦊"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#5F8B5F"
+                android:stateListAnimator="@null"
+                app:cornerRadius="30dp"
+                android:elevation="4dp"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconGravity="textStart"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/garisBawah" />
+
+            <!-- Pola Hiasan Jepang Sederhana -->
+            <TextView
+                android:id="@+id/polaAtas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◈ ◈ ◈"
+                android:textSize="16sp"
+                android:textColor="#D1E5D1"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+
+            <!-- Teks Jepang Kecil -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="arigatou"
+                android:textSize="12sp"
+                android:textColor="#B8D0B8"
+                android:layout_marginTop="4dp"
+                android:fontStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/polaAtas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Stiker Tambahan di Bawah -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🍵"
+        android:textSize="35sp"
+        android:textColor="#B8D0B8"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="0.5"
+        android:rotation="-8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
