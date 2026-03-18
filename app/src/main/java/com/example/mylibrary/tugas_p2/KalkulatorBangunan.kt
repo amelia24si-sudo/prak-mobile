@@ -65,7 +65,6 @@ class KalkulatorBangunan : AppCompatActivity() {
                 Log.d(TAG, "Menghitung Luas Segitiga -> Alas: $alas, Tinggi: $tinggi, Hasil: $luas")
             } else {
                 Toast.makeText(this, "Harap isi alas dan tinggi!", Toast.LENGTH_SHORT).show()
-                Log.w(TAG, "Gagal menghitung segitiga: Input masih kosong")
             }
         }
 
@@ -90,7 +89,6 @@ class KalkulatorBangunan : AppCompatActivity() {
                 Log.d(TAG, "Menghitung Volume Balok -> P: $panjang, L: $lebar, T: $tinggi, Hasil: $volume")
             } else {
                 Toast.makeText(this, "Harap isi panjang, lebar, dan tinggi!", Toast.LENGTH_SHORT).show()
-                Log.w(TAG, "Gagal menghitung balok: Input masih kosong")
             }
         }
     }
