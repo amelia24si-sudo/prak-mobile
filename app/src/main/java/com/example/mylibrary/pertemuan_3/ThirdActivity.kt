@@ -1,5 +1,6 @@
 package com.example.mylibrary.pertemuan_3
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -32,8 +33,9 @@ class ThirdActivity : AppCompatActivity() {
             val no = binding.inputNoTujuan.text
             Log.e("Klik btnSubmit", "Tombol berhasil di tekan. Isi dari inputNo = $no")
 
-            Toast.makeText(this, "Anda telah melakukan klik pada tombol Submit $no", Toast.LENGTH_SHORT)
-                .show()
+            Toast.makeText(this, "Anda telah melakukan klik pada tombol Submit $no", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ThirdResultActivity::class.java)
+            startActivity(intent)
         }
     }
 }

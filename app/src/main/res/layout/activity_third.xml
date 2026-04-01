@@ -5,53 +5,63 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8E1E1"
-    tools:context=".pertemuan_3.ThirdActivity">
+    android:background="@drawable/bg"
+    tools:context=".pertemuan_3.ThirdActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="1dp">
 
     <Button
         android:id="@+id/btnkirim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:backgroundTint="#D79E93"
-        android:textColor="#9D4D35"
+        android:layout_marginBottom="184dp"
+        android:backgroundTint="#171F3A"
+        android:fontFamily="@font/fjallaone_regular"
         android:text="Kirim"
+        android:textColor="#E1E3EB"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan" />
+        app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan"
+        app:layout_constraintVertical_bias="0.445" />
 
     <EditText
         android:id="@+id/inputNoTujuan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
         android:layout_marginHorizontal="60dp"
-        android:layout_marginVertical="210dp"
+        android:layout_marginTop="144dp"
         android:ems="10"
-        android:textColor="#3A1006"
         android:inputType="text"
-        android:text=""
+        android:textColor="#053B57"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="167dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/smartphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/fjallaone_regular"
         android:letterSpacing="0.5"
-        android:text="Halaman Kirim"
-        android:textColor="#85402A"
+        android:text="@string/judul"
+        android:textColor="#053B57"
         android:textSize="23sp"
-        app:layout_constraintBottom_toTopOf="@+id/inputNoTujuan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
