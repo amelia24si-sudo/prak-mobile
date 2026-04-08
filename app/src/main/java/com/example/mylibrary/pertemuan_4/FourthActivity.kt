@@ -13,6 +13,7 @@ import com.example.mylibrary.R
 import com.example.mylibrary.databinding.ActivityFourthBinding
 import com.example.mylibrary.databinding.ActivityMainBinding
 import com.example.mylibrary.databinding.ActivityThirdBinding
+import com.google.android.material.snackbar.Snackbar
 import kotlin.math.log
 
 class FourthActivity : AppCompatActivity() {
@@ -28,6 +29,13 @@ class FourthActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.btnShowSnackbar.setOnClickListener {
+            Snackbar.make(binding.root, "Ini adalah Snackbar", Snackbar.LENGTH_SHORT)
+                .setAction("Tutup"){
+                    Log.e("Info Snackbar","Snackbar ditutup")
+                }
+                .show()
+        }
 
         binding.btnToMain.setOnClickListener { //pakai binding untuk lebih mempermudah pemanggilan id
             //Mengambil value dari inputNama dan menampilkan di Logcat
@@ -40,6 +48,7 @@ class FourthActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
         val name = intent.getStringExtra("name")
         val from = intent.getStringExtra("from")
         val age = intent.getIntExtra("age",0)

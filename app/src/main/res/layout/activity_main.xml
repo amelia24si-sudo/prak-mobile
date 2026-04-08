@@ -13,17 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
+        android:layout_marginTop="28dp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="184dp"
         android:backgroundTint="#171F3A"
         android:fontFamily="@font/fjallaone_regular"
         android:text="Kirim"
         android:textColor="#E1E3EB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan" />
+
+    <Button
+        android:id="@+id/btnShowAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#171F3A"
+        android:fontFamily="@font/fjallaone_regular"
+        android:text="Alert"
+        android:textColor="#E1E3EB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintTop_toBottomOf="@+id/btnToFourrth"
+        app:layout_constraintVertical_bias="0.281" />
 
     <EditText
         android:id="@+id/inputNoTujuan"

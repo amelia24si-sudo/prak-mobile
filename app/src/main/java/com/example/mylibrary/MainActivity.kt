@@ -12,6 +12,8 @@ import com.example.mylibrary.databinding.ActivityMainBinding
 import com.example.mylibrary.databinding.ActivityThirdBinding
 import com.example.mylibrary.pertemuan_3.ThirdResultActivity
 import com.example.mylibrary.pertemuan_4.FourthActivity
+import com.example.mylibrary.tugas_p2.KalkulatorBangunan
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -38,6 +40,23 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("age", 25)
             startActivity(intent)
             finish()
+        }
+        binding.btnShowAlertDialog.setOnClickListener {
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Konfirmasi")
+                .setMessage("Apakah Anda yakin ingin melanjutkan?")
+                .setPositiveButton("Ya") { dialog, _ ->
+                    val i = Intent(this, KalkulatorBangunan::class.java)
+                    startActivity(i)
+                    dialog.dismiss()
+                    Log.e("Info Dialog","Anda memilih Ya!")
+                }
+                .setNegativeButton("Batal") { dialog, _ ->
+                    dialog.dismiss()
+                    Log.e("Info Dialog","Anda memilih Tidak!")
+                }
+                .show()
+
         }
     }
 }
