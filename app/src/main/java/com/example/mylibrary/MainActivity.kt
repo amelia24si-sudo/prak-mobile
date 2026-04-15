@@ -28,27 +28,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding.btnToFourrth.setOnClickListener { //pakai binding untuk lebih mempermudah pemanggilan id
-            //Mengambil value dari inputNama dan menampilkan di Logcat
-            Toast.makeText(
-                this,
-                "Anda telah memasuki halaman Fourth Activity",
-                Toast.LENGTH_SHORT
-            ).show()
-            val intent = Intent(this, FourthActivity::class.java)
-            intent.putExtra("name", "Politeknik Caltex Riau")
-            intent.putExtra("from", "Rumbai")
-            intent.putExtra("age", 25)
-            startActivity(intent)
-            finish()
-        }
-        binding.btnShowAlertDialog.setOnClickListener {
             MaterialAlertDialogBuilder(this)
                 .setTitle("Konfirmasi")
                 .setMessage("Apakah Anda yakin ingin melanjutkan?")
                 .setPositiveButton("Ya") { dialog, _ ->
-                    val i = Intent(this, KalkulatorBangunan::class.java)
-                    startActivity(i)
+                    val intent = Intent(this, FourthActivity::class.java)
+                    startActivity(intent)
                     dialog.dismiss()
+                    Toast.makeText(
+                        this,
+                        "Anda telah memasuki halaman Fourth Activity",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     Log.e("Info Dialog","Anda memilih Ya!")
                 }
                 .setNegativeButton("Batal") { dialog, _ ->
@@ -56,7 +47,10 @@ class MainActivity : AppCompatActivity() {
                     Log.e("Info Dialog","Anda memilih Tidak!")
                 }
                 .show()
-
+            //Mengambil value dari inputNama dan menampilkan di Logcat
+            intent.putExtra("name", "Politeknik Caltex Riau")
+            intent.putExtra("from", "Rumbai")
+            intent.putExtra("age", 25)
         }
     }
 }

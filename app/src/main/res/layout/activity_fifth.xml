@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1614"
+    tools:context=".pertemuan_5.FifthActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#2A221C"> <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2A221C"
+        app:titleTextColor="#D6C7B0" app:subtitleTextColor="#D6C7B0"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="24dp"
+        android:clipToPadding="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Malam itu hujan turun dengan deras, mengetuk kaca jendela perpustakaan yang menjulang tinggi. Cahaya lampu berkedip redup, menciptakan bayangan panjang di antara rak-rak mahoni yang dipenuhi buku-buku kuno."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aroma khas kertas tua dan debu yang mengendap selama berabad-abad memenuhi udara. Di sudut ruangan, sebuah meja kayu menanti, diterangi oleh nyala lilin yang menari-nari pelan ditiup angin malam."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanganku menyusuri punggung buku-buku tebal, hingga terhenti pada sebuah jurnal bersampul kulit hitam yang tak bertanda. Halamannya menguning, rapuh di setiap tepinya, menyimpan misteri yang telah lama tertidur."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tinta pudar di dalamnya membentuk simbol-simbol rahasia dan catatan pinggir yang ditulis dengan tergesa-gesa. Ini bukan sekadar buku, melainkan pikiran seseorang yang terobsesi pada pencarian kebenaran mutlak. "
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terkadang, ilmu pengetahuan adalah sebuah labirin tanpa jalan keluar. Semakin dalam kita menggali masa lalu, semakin kita menyadari betapa sedikitnya hal yang benar-benar kita pahami tentang dunia yang sunyi ini."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aku menutup jurnal itu saat dentang jam besar menggema dari menara utama. Malam masih panjang, dan cangkir kopi hitam yang mulai dingin di mejaku akan menjadi teman terbaik hingga fajar menyingsing."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWebView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#4A1E1B"
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                app:cornerRadius="6dp"
+                android:text="WebView"
+                app:icon="@drawable/baseline_arrow_forward_24"
+                app:iconTint="#A68A64" app:iconGravity="textStart" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

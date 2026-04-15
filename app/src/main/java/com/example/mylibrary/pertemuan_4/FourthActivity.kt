@@ -13,6 +13,8 @@ import com.example.mylibrary.R
 import com.example.mylibrary.databinding.ActivityFourthBinding
 import com.example.mylibrary.databinding.ActivityMainBinding
 import com.example.mylibrary.databinding.ActivityThirdBinding
+import com.example.mylibrary.pertemuan_5.FifthActivity
+import com.example.mylibrary.pertemuan_5.WebViewActivity
 import com.google.android.material.snackbar.Snackbar
 import kotlin.math.log
 
@@ -29,12 +31,14 @@ class FourthActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnShowSnackbar.setOnClickListener {
+        binding.btnShowSnackbar.setOnClickListener { //next
             Snackbar.make(binding.root, "Ini adalah Snackbar", Snackbar.LENGTH_SHORT)
                 .setAction("Tutup"){
                     Log.e("Info Snackbar","Snackbar ditutup")
                 }
                 .show()
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
         }
 
         binding.btnToMain.setOnClickListener { //pakai binding untuk lebih mempermudah pemanggilan id
