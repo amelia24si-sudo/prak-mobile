@@ -24,6 +24,14 @@
             app:titleTextColor="#D6C7B0"
             app:layout_scrollFlags="scroll|enterAlways"/>
 
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:trackColor="#1A1614"
+            app:indicatorColor="#A68A64"
+            android:visibility="gone" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <WebView

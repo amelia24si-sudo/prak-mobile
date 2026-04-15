@@ -12,25 +12,34 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:background="#2A221C"> <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#2A221C"
-        app:titleTextColor="#D6C7B0" app:subtitleTextColor="#D6C7B0"
-        app:layout_scrollFlags="scroll|enterAlways"/>
+        android:background="#2A221C">
 
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="#2A221C"
+            app:expandedTitleTextColor="#D6C7B0"
+            app:collapsedTitleTextColor="#D6C7B0"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:padding="24dp"
         android:clipToPadding="false">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -86,27 +95,95 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aku menutup jurnal itu saat dentang jam besar menggema dari menara utama. Malam masih panjang, dan cangkir kopi hitam yang mulai dingin di mejaku akan menjadi teman terbaik hingga fajar menyingsing."
+                android:text="Kulembalik halaman demi halaman. Di pertengahan jurnal, kutemukan sketsa rasi bintang yang belum pernah kulihat di peta astronomi mana pun. Bintang-bintang itu dihubungkan dengan garis-garis tegas, seolah membentuk sebuah peta menuju tempat yang tidak ada di bumi."
                 android:textColor="#D6C7B0"
                 android:fontFamily="@font/fjallaone_regular"
                 android:lineSpacingExtra="4dp"
                 android:layout_marginTop="24dp" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angin tiba-tiba berhembus menyelinap dari celah jendela, membuat api lilin di hadapanku hampir padam. Entah mengapa, ada perasaan aneh yang merayap di tengkukku. Sensasi dingin yang menyiratkan bahwa aku tidak sendirian di perpustakaan raksasa ini."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sang penulis jurnal menyebutkan sebuah 'Gerbang Ketiga', sebuah metafora—atau mungkin tempat nyata—di mana batas antara realitas dan ilusi memudar. Tulisan tangannya semakin berantakan di bagian ini, seakan ia sedang dikejar oleh sesuatu saat menulisnya."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sebuah coretan tebal di sudut halaman menarik perhatianku. Bunyinya singkat: 'Mereka yang mencari terlalu dalam, akan melupakan jalan untuk kembali.' Kalimat itu terdengar seperti peringatan, sekaligus kutukan bagi siapa saja yang berani membaca buku ini."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lilin di depanku akhirnya padam, menyisakan kepulan asap tipis beraroma belerang dan lilin lebah. Kegelapan seketika menelan sudut mejaku. Hanya cahaya kilat dari luar jendela yang sesekali menerangi ruangan ini."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aku menutup jurnal itu perlahan. Debu kembali berterbangan saat sampul kulitnya beradu. Ada godaan untuk membawanya pulang, namun instingku mengatakan bahwa buku ini menuntut untuk ditinggalkan di tempat ia ditemukan."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saat dentang jam besar menggema dari menara utama, aku bangkit dari kursi kayuku. Malam masih panjang, dan rahasia tetaplah rahasia. Terkadang, kegelapan lebih pantas dibiarkan tidur tanpa perlu diusik oleh rasa ingin tahu manusia."
+                android:textColor="#D6C7B0"
+                android:fontFamily="@font/fjallaone_regular"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="40dp" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnWebView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginBottom="80dp"
                 android:backgroundTint="#4A1E1B"
                 android:textColor="#D6C7B0"
                 android:fontFamily="@font/fjallaone_regular"
                 app:cornerRadius="6dp"
-                android:text="WebView"
+                android:text="Baca Arsip Digital (WebView)"
                 app:icon="@drawable/baseline_arrow_forward_24"
-                app:iconTint="#A68A64" app:iconGravity="textStart" />
+                app:iconTint="#A68A64"
+                app:iconGravity="textStart" />
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabScrollToTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:backgroundTint="#263025"
+        app:tint="#D6C7B0"
+        android:src="@drawable/baseline_arrow_upward_24"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:contentDescription="Scroll ke atas" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

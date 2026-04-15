@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_search"
-        android:title="Search"
-        android:icon="@android:drawable/ic_menu_search"
-        app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_settings"
-        android:title="Settings"
-        android:icon="@android:drawable/ic_menu_preferences"
-        app:showAsAction="never" />
+        android:id="@+id/action_search"
+        android:title="Cari Jurnal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_text_size"
+        android:title="Ukuran Teks"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/text_small" android:title="Kecil" />
+                <item android:id="@+id/text_medium" android:title="Sedang" android:checked="true" />
+                <item android:id="@+id/text_large" android:title="Besar" />
+            </group>
+        </menu>
+    </item>
 </menu>
