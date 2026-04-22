@@ -49,7 +49,7 @@ class FourthActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
             val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+
             finish()
         }
 

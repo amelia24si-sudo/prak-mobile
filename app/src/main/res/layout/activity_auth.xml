@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/bg2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg2"
-    tools:context=".MainActivity">
+    tools:context=".AuthActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnLogout"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
@@ -17,13 +17,48 @@
         android:layout_marginRight="60dp"
         android:backgroundTint="#37291E"
         android:fontFamily="@font/fjallaone_regular"
-        android:text="Logout"
+        android:text="Login"
         android:textColor="#D6C7B0"
         app:cornerRadius="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#31251A"
+        android:ems="10"
+        android:textColorHint="#CEBFAA"
+        android:hint="Username"
+        android:fontFamily="@font/fjallaone_regular"
+        android:inputType="text"
+        android:textColor="#D6C7B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#31251A"
+        android:hint="Passsword"
+        android:ems="10"
+        android:textColorHint="#CEBFAA"
+        android:fontFamily="@font/fjallaone_regular"
+        android:inputType="textPassword"
+        android:textColor="#D6C7B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputUsername"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"

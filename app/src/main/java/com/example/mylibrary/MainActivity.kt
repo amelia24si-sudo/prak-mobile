@@ -14,6 +14,7 @@ import com.example.mylibrary.pertemuan_3.ThirdResultActivity
 import com.example.mylibrary.pertemuan_4.FourthActivity
 import com.example.mylibrary.tugas_p2.KalkulatorBangunan
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import androidx.core.content.edit
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,17 +28,24 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnToFourrth.setOnClickListener { //pakai binding untuk lebih mempermudah pemanggilan id
+        val sharedPref = getSharedPreferences("user_session", MODE_PRIVATE)
+
+        binding.btnLogout.setOnClickListener { //pakai binding untuk lebih mempermudah pemanggilan id
             MaterialAlertDialogBuilder(this)
-                .setTitle("Konfirmasi")
-                .setMessage("Apakah Anda yakin ingin melanjutkan?")
+                .setTitle("Logout")
+                .setMessage("Apakah Anda yakin ingin Logout?")
                 .setPositiveButton("Ya") { dialog, _ ->
-                    val intent = Intent(this, FourthActivity::class.java)
+                    sharedPref.edit {
+                        clear()
+                    }
+                    dialog.dismiss()
+                    val intent = Intent(this, AuthActivity::class.java)
                     startActivity(intent)
+                    finish()
                     dialog.dismiss()
                     Toast.makeText(
                         this,
-                        "Anda telah memasuki halaman Fourth Activity",
+                        "Anda telah Logout",
                         Toast.LENGTH_SHORT
                     ).show()
                     Log.e("Info Dialog","Anda memilih Ya!")
