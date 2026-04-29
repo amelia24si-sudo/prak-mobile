@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B9AAD5"
-    tools:context=".pertemuan_7.ThirdFragment">
+    tools:context=".Home.pertemuan_7.ThirdFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

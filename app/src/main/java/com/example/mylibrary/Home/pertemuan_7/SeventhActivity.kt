@@ -1,4 +1,4 @@
-package com.example.mylibrary.pertemuan_7
+package com.example.mylibrary.Home.pertemuan_7
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,7 +8,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.mylibrary.R
-import com.example.mylibrary.databinding.ActivityFifthBinding
 import com.example.mylibrary.databinding.ActivitySeventhBinding
 
 class SeventhActivity : AppCompatActivity() {

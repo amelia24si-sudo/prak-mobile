@@ -1,4 +1,4 @@
-package com.example.mylibrary.pertemuan_4
+package com.example.mylibrary.Home.pertemuan_4
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,12 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.mylibrary.MainActivity
 import com.example.mylibrary.R
 import com.example.mylibrary.databinding.ActivityFourthBinding
-import com.example.mylibrary.databinding.ActivityMainBinding
-import com.example.mylibrary.databinding.ActivityThirdBinding
-import com.example.mylibrary.pertemuan_5.FifthActivity
-import com.example.mylibrary.pertemuan_5.WebViewActivity
+import com.example.mylibrary.Home.pertemuan_5.FifthActivity
 import com.google.android.material.snackbar.Snackbar
-import kotlin.math.log
 
 class FourthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFourthBinding

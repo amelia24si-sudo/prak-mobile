@@ -1,4 +1,4 @@
-package com.example.mylibrary.pertemuan_5
+package com.example.mylibrary.Home.pertemuan_5
 
 import android.animation.ObjectAnimator
 import android.content.Intent

@@ -9,14 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mylibrary.databinding.ActivityMainBinding
-import com.example.mylibrary.databinding.ActivityThirdBinding
-import com.example.mylibrary.pertemuan_3.ThirdResultActivity
-import com.example.mylibrary.pertemuan_4.FourthActivity
-import com.example.mylibrary.tugas_p2.KalkulatorBangunan
+import com.example.mylibrary.Home.pertemuan_4.FourthActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import androidx.core.content.edit
-import com.example.mylibrary.pertemuan_5.FifthActivity
-import com.example.mylibrary.pertemuan_7.SeventhActivity
+import com.example.mylibrary.Home.pertemuan_5.FifthActivity
+import com.example.mylibrary.Home.pertemuan_7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
