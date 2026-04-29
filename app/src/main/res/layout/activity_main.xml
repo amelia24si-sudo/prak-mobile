@@ -25,6 +25,54 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSeventh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#37291E"
+        android:fontFamily="@font/fjallaone_regular"
+        android:text="Pertemuan 7"
+        android:textColor="#D6C7B0"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnfifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#37291E"
+        android:fontFamily="@font/fjallaone_regular"
+        android:text="Pertemuan 5"
+        android:textColor="#D6C7B0"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeventh" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#37291E"
+        android:fontFamily="@font/fjallaone_regular"
+        android:text="Pertemuan 4"
+        android:textColor="#D6C7B0"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfifth" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="167dp"
@@ -40,7 +88,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="28dp"
         android:background="#463426"
         android:fontFamily="@font/fjallaone_regular"
         android:letterSpacing="0.5"

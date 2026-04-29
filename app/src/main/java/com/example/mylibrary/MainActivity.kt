@@ -15,6 +15,8 @@ import com.example.mylibrary.pertemuan_4.FourthActivity
 import com.example.mylibrary.tugas_p2.KalkulatorBangunan
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import androidx.core.content.edit
+import com.example.mylibrary.pertemuan_5.FifthActivity
+import com.example.mylibrary.pertemuan_7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -59,6 +61,19 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("name", "Politeknik Caltex Riau")
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
+        }
+
+        binding.btnSeventh.setOnClickListener {
+            val i = Intent(this, SeventhActivity::class.java)
+            startActivity(i)
+        }
+        binding.btnfifth.setOnClickListener {
+            val i = Intent(this, FifthActivity::class.java)
+            startActivity(i)
+        }
+        binding.btnFourth.setOnClickListener {
+            val i = Intent(this, FourthActivity::class.java)
+            startActivity(i)
         }
     }
 }
