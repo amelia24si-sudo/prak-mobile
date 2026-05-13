@@ -17,6 +17,7 @@ import com.example.mylibrary.Home.pertemuan_3.ThirdActivity
 import com.example.mylibrary.Home.pertemuan_4.FourthActivity
 import com.example.mylibrary.Home.pertemuan_5.FifthActivity
 import com.example.mylibrary.Home.pertemuan_7.SeventhActivity
+import com.example.mylibrary.Home.pertemuan_9.NinthActivity
 import com.example.mylibrary.R
 import com.example.mylibrary.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -57,6 +58,10 @@ class HomeFragment : Fragment() {
                     Log.e("Info Dialog", "Anda memilih Tidak!")
                 }
                 .show()
+        }
+        binding.btnp9.setOnClickListener {
+            val i = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(i)
         }
         binding.btnp7.setOnClickListener {
             val i = Intent(requireContext(), SeventhActivity::class.java)
