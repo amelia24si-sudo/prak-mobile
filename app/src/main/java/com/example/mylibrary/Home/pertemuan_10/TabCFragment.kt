@@ -91,7 +91,7 @@ class TabCFragment : Fragment() {
             layoutManager = GridLayoutManager(requireContext(), 2)
 
             /** Jika ingin model Linear **/
-            //layoutManager = LinearLayoutManager(requireContext())
+            //layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
             this.adapter = adapter
         }
