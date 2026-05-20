@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import com.example.mylibrary.AuthActivity
+import com.example.mylibrary.Home.pertemuan_10.TenthActivity
 import com.example.mylibrary.Home.pertemuan_2.SecondActivity
 import com.example.mylibrary.Home.pertemuan_3.ThirdActivity
 import com.example.mylibrary.Home.pertemuan_4.FourthActivity
@@ -58,6 +59,10 @@ class HomeFragment : Fragment() {
                     Log.e("Info Dialog", "Anda memilih Tidak!")
                 }
                 .show()
+        }
+        binding.btnp10.setOnClickListener {
+            val i = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(i)
         }
         binding.btnp9.setOnClickListener {
             val i = Intent(requireContext(), NinthActivity::class.java)
