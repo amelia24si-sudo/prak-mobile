@@ -136,6 +136,13 @@
                     android:text="P10"
                     app:layout_columnWeight="1"
                     app:layout_gravity="fill_horizontal" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnp11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="P11"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
             </androidx.gridlayout.widget.GridLayout>
 
             <Button

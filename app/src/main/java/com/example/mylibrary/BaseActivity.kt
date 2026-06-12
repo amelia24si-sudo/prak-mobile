@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.mylibrary.Home.HomeFragment
 import com.example.mylibrary.Message.MessageFragment
 import com.example.mylibrary.More.MoreFragment
+import com.example.mylibrary.Note.NoteFragment
 import com.example.mylibrary.databinding.ActivityBaseBinding
 
 
@@ -46,6 +47,11 @@ class BaseActivity : AppCompatActivity() {
                     Toast.makeText(this, "More Clicked", Toast.LENGTH_SHORT).show()
                     true
                 }
+                R.id.note -> {
+                    replaceFragment(NoteFragment())
+                    true
+                }
+
                 else -> false // return false jika item tidak ada yang di klik
             }
         }

@@ -23,6 +23,7 @@ import com.example.mylibrary.Home.pertemuan_5.FifthActivity
 import com.example.mylibrary.Home.pertemuan_7.SeventhActivity
 import com.example.mylibrary.Home.pertemuan_9.NinthActivity
 import com.example.mylibrary.Home.photo.PhotoAdapter
+import com.example.mylibrary.Note.NoteFormActivity
 import com.example.mylibrary.R
 import com.example.mylibrary.data.api.PhotoApiClient
 import com.example.mylibrary.databinding.FragmentHomeBinding
@@ -65,6 +66,10 @@ class HomeFragment : Fragment() {
                     Log.e("Info Dialog", "Anda memilih Tidak!")
                 }
                 .show()
+        }
+        binding.btnp11.setOnClickListener {
+            val i = Intent(requireContext(), NoteFormActivity::class.java)
+            startActivity(i)
         }
         binding.btnp10.setOnClickListener {
             val i = Intent(requireContext(), TenthActivity::class.java)
