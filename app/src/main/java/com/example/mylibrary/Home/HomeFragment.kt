@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mylibrary.AuthActivity
 import com.example.mylibrary.Home.pertemuan_10.TenthActivity
+import com.example.mylibrary.Home.pertemuan_13.ThirteenthActivity
 import com.example.mylibrary.Home.pertemuan_2.SecondActivity
 import com.example.mylibrary.Home.pertemuan_3.ThirdActivity
 import com.example.mylibrary.Home.pertemuan_4.FourthActivity
@@ -67,8 +68,8 @@ class HomeFragment : Fragment() {
                 }
                 .show()
         }
-        binding.btnp11.setOnClickListener {
-            val i = Intent(requireContext(), NoteFormActivity::class.java)
+        binding.btnp13.setOnClickListener {
+            val i = Intent(requireContext(), ThirteenthActivity::class.java)
             startActivity(i)
         }
         binding.btnp10.setOnClickListener {
